@@ -1,0 +1,32 @@
+_prefs: 
+  baselayer: ''
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85
+  - 180
+  - 85
+center: 
+  - -123.0527
+  - 39.0696
+  - 11
+description: ''
+format: "png8:m=h:c=64"
+interactivity_layer: ''
+layers: null
+maxzoom: 19
+minzoom: 0
+name: Streets Classic
+source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b"
+styles: 
+  - vars.mss
+  - bg.mss
+  - transit_routes.mss
+  - road.mss
+  - label.mss
+  - poi_classic.mss
+template: ''
