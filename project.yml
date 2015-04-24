@@ -1,5 +1,6 @@
 _prefs: 
   baselayer: ''
+  mapid: trilliumtransit.7c0460cb
   saveCenter: false
 _properties: 
   bridge: 
@@ -25,8 +26,8 @@ source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b"
 styles: 
   - vars.mss
   - bg.mss
-  - transit_routes.mss
   - road.mss
+  - transit_routes.mss
   - label.mss
   - poi_classic.mss
 template: ''
