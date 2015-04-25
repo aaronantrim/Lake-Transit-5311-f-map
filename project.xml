@@ -4857,12 +4857,29 @@
     <StyleName>admin-lev34outline</StyleName>
     <StyleName>admin-lev34</StyleName>  </Layer>
 
+<Style name="country_label_line" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#223344" stroke-opacity="0.8" stroke-width="0.8" stroke-dasharray="5, 2" />
+  </Rule>
+</Style>
+<Layer name="country_label_line"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>country_label_line</StyleName>  </Layer>
 
+<Style name="Route_4_kml" filter-mode="first">
+  <Rule>
+    <Filter>([mapnik::geometry_type] = 2)</Filter>
+    <LineSymbolizer stroke="#08d7bd" stroke-width="5" />
+  </Rule>
+</Style>
+<Layer name="Route_4_kml"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>Route_4_kml</StyleName>  </Layer>
 
 <Style name="Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml" filter-mode="first">
   <Rule>
     <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <LineSymbolizer stroke="#ff4100" stroke-width="5" />
+    <LineSymbolizer stroke="#d70808" stroke-width="5" />
   </Rule>
 </Style>
 <Layer name="Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml"
@@ -4872,32 +4889,12 @@
 <Style name="Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml" filter-mode="first">
   <Rule>
     <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <LineSymbolizer stroke="#ff4100" stroke-width="5" />
+    <LineSymbolizer stroke="#d70808" stroke-width="5" />
   </Rule>
 </Style>
 <Layer name="Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml</StyleName>  </Layer>
-
-<Style name="Route_4_kml" filter-mode="first">
-  <Rule>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
-    <LineSymbolizer stroke="#ff4100" stroke-width="5" />
-  </Rule>
-</Style>
-<Layer name="Route_4_kml"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Route_4_kml</StyleName>  </Layer>
-
-
-<Style name="country_label_line" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke="#223344" stroke-opacity="0.8" stroke-width="0.8" stroke-dasharray="5, 2" />
-  </Rule>
-</Style>
-<Layer name="country_label_line"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>country_label_line</StyleName>  </Layer>
 
 <Style name="country_label" filter-mode="first">
   <Rule>
@@ -5279,7 +5276,7 @@
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 2) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="13" character-spacing="3" line-spacing="8" placement="line" avoid-edges="true" fontset-name="fontset-1" fill="#cae3f5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="3" line-spacing="8" placement="line" avoid-edges="true" fontset-name="fontset-1" fill="#cae3f5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
@@ -5307,7 +5304,7 @@
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([mapnik::geometry_type] = 1) and ([labelrank] = 3)</Filter>
-    <TextSymbolizer size="13" character-spacing="3" line-spacing="8" placement="point" wrap-width="50" wrap-before="true" fontset-name="fontset-1" fill="#cae3f5" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" character-spacing="3" line-spacing="8" placement="point" wrap-width="50" wrap-before="true" fontset-name="fontset-1" fill="#cae3f5" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
@@ -7549,7 +7546,5 @@
 <Layer name="housenum_label"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>housenum_label</StyleName>  </Layer>
-
-
 
 </Map>

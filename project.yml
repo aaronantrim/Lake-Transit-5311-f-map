@@ -18,7 +18,31 @@ center:
 description: ''
 format: "png8:m=h:c=64"
 interactivity_layer: ''
-layers: null
+layers: 
+  - landuse
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - tunnel
+  - road
+  - bridge
+  - admin
+  - country_label_line
+  - Route_4_kml
+  - Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml
+  - Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml
+  - country_label
+  - marine_label
+  - state_label
+  - place_label
+  - water_label
+  - poi_label
+  - road_label
+  - waterway_label
+  - housenum_label
 maxzoom: 19
 minzoom: 0
 name: Streets Classic
