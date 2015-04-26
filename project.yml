@@ -43,10 +43,11 @@ layers:
   - road_label
   - waterway_label
   - housenum_label
+  - key_connections
 maxzoom: 19
 minzoom: 0
-name: Streets Classic
-source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b"
+name: Lake 5311(f) application
+source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b,trilliumtransit.7fren708"
 styles: 
   - vars.mss
   - bg.mss

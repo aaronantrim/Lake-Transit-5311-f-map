@@ -371,8 +371,10 @@ text-allow-overlap: true;
 
 // 2_5 Villages ______________________________________________________
 
-#place_label[type='village'][zoom>=10][zoom<=14][localrank<=2],
-#place_label[type='village'][zoom>=15][zoom<=17] {
+
+
+#place_label[type='village'][name!='Redwood Valley'][zoom>=10][zoom<=14][localrank<=2],
+#place_label[type='village'][name!='Redwood Valley'][zoom>=15][zoom<=17] {
   text-name: @name;
   text-face-name: @sans;
   text-placement: point;

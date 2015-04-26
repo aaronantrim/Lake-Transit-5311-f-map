@@ -13,3 +13,16 @@
     line-width: 5;
   }
 }
+
+#key_connections {
+  text-name: @name;
+  text-face-name: @sans;
+  text-placement: point;
+  text-fill: @city_text;
+  text-halo-fill: #fff;
+  text-halo-radius: 2;
+  text-halo-rasterizer: fast;
+  text-wrap-width: 40;
+  text-line-spacing: -4;
+  text-allow-overlap: true;
+  }
