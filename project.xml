@@ -10,7 +10,7 @@
   <Parameter name="maxzoom">19</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Lake 5311(f) application]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b,trilliumtransit.7fren708]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.1985c30e]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -4866,35 +4866,32 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>country_label_line</StyleName>  </Layer>
 
-<Style name="Route_4_kml" filter-mode="first">
+<Style name="route-4" filter-mode="first">
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
     <LineSymbolizer stroke="#08d7bd" stroke-width="5" />
   </Rule>
 </Style>
-<Layer name="Route_4_kml"
+<Layer name="route-4"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Route_4_kml</StyleName>  </Layer>
+    <StyleName>route-4</StyleName>  </Layer>
 
-<Style name="Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml" filter-mode="first">
+<Style name="rt7-to-mendo-college" filter-mode="first">
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
     <LineSymbolizer stroke="#d70808" stroke-width="5" />
   </Rule>
 </Style>
-<Layer name="Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml"
+<Layer name="rt7-to-mendo-college"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml</StyleName>  </Layer>
+    <StyleName>rt7-to-mendo-college</StyleName>  </Layer>
 
-<Style name="Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml" filter-mode="first">
+<Style name="rt-7-to-mendo-airport" filter-mode="first">
   <Rule>
-    <Filter>([mapnik::geometry_type] = 2)</Filter>
     <LineSymbolizer stroke="#d70808" stroke-width="5" />
   </Rule>
 </Style>
-<Layer name="Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml"
+<Layer name="rt-7-to-mendo-airport"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml</StyleName>  </Layer>
+    <StyleName>rt-7-to-mendo-airport</StyleName>  </Layer>
 
 <Style name="country_label" filter-mode="first">
   <Rule>
@@ -7541,13 +7538,87 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>housenum_label</StyleName>  </Layer>
 
-<Style name="key_connections" filter-mode="first">
+<Style name="key-connections" filter-mode="first">
   <Rule>
-    <TextSymbolizer fontset-name="fontset-3" placement="point" fill="#171616" halo-fill="#ffffff" halo-radius="2" halo-rasterizer="fast" wrap-width="40" line-spacing="-4" allow-overlap="true" ><![CDATA[[name]]]></TextSymbolizer>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="12" dx="15" dy="15" wrap-width="100" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="10" dx="12" dy="12" wrap-width="80" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-18.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <TextSymbolizer size="14" dx="19" dy="19" wrap-width="120" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+    <PointSymbolizer transform="scale(4)" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([scalerank] = 1)</Filter>
+    <MarkersSymbolizer file="img/maki-classic/bus-12.svg" fill="#4488bb" />
+    <TextSymbolizer size="10" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" dx="8" dy="8" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer size="10" dx="12" dy="12" wrap-width="80" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-18.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer size="14" dx="19" dy="19" wrap-width="120" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+    <PointSymbolizer transform="scale(4)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <TextSymbolizer size="12" dx="15" dy="15" wrap-width="100" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([scalerank] = 2)</Filter>
+    <MarkersSymbolizer file="img/maki-classic/bus-12.svg" fill="#4488bb" />
+    <TextSymbolizer size="10" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" dx="8" dy="8" ><![CDATA['']]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <TextSymbolizer size="14" dx="19" dy="19" wrap-width="120" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+    <PointSymbolizer transform="scale(4)" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <TextSymbolizer size="12" dx="15" dy="15" wrap-width="100" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-24.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <TextSymbolizer size="10" dx="12" dy="12" wrap-width="80" wrap-before="true" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" ><![CDATA[[Name]]]></TextSymbolizer>
+    <MarkersSymbolizer file="img/maki-classic/bus-18.svg" fill="#4488bb" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <MarkersSymbolizer file="img/maki-classic/bus-12.svg" fill="#4488bb" />
+    <TextSymbolizer size="10" fill="#444455" halo-fill="#ffffff" halo-radius="1" halo-rasterizer="fast" fontset-name="fontset-3" placement-type="simple" placements="S,N,E,W" dx="8" dy="8" ><![CDATA['']]></TextSymbolizer>
   </Rule>
 </Style>
-<Layer name="key_connections"
+<Layer name="key-connections"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>key_connections</StyleName>  </Layer>
+    <StyleName>key-connections</StyleName>  </Layer>
 
 </Map>

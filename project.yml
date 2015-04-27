@@ -31,9 +31,9 @@ layers:
   - bridge
   - admin
   - country_label_line
-  - Route_4_kml
-  - Route_7-3rd_and_Main_to_Mendo_College_Ukiah_kml
-  - Route_7-_Mendo_College_Ukiah_to_Ukiah_Airport_kml
+  - route-4
+  - rt7-to-mendo-college
+  - rt-7-to-mendo-airport
   - country_label
   - marine_label
   - state_label
@@ -43,11 +43,11 @@ layers:
   - road_label
   - waterway_label
   - housenum_label
-  - key_connections
+  - key-connections
 maxzoom: 19
 minzoom: 0
 name: Lake 5311(f) application
-source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.92b7b42b,trilliumtransit.7fren708"
+source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.1985c30e"
 styles: 
   - vars.mss
   - bg.mss
