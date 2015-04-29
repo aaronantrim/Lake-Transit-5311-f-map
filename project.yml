@@ -32,6 +32,8 @@ layers:
   - admin
   - country_label_line
   - route-4
+  - route-1
+  - route-3
   - rt7-to-mendo-college
   - rt-7-to-mendo-airport
   - country_label
